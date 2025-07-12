@@ -5,19 +5,13 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist/public"
+        "distDir": "dist",
+        "installCommand": "npm install",
+        "buildCommand": "npm run vercel-build"
       }
-    },
-    {
-      "src": "api/**/*.ts",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
     {
       "handle": "filesystem"
     },
