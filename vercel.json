@@ -9,7 +9,7 @@
       }
     },
     {
-      "src": "api//*.ts",
+      "src": "api/**/*.ts",
       "use": "@vercel/node"
     }
   ],
@@ -24,6 +24,6 @@
     {
       "src": "/(.*)",
       "dest": "/index.html"
-    }
-  ]
+    }
+  ]
 }
