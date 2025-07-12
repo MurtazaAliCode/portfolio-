@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useThemeContext } from '@/components/ThemeProvider';
 import { useLocation } from 'wouter';
-import logoImage from '@assets/logo_1751278240532.webp';
+import logoImage from "../assets/logo_1751278240532.webp";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -91,10 +91,9 @@ export default function Navigation() {
                 <button
                   key={link.href}
                   onClick={() => handleNavClick(link.href, link.isRoute)}
-                  className={`hover:text-cyan-400 transition-colors duration-200 nav-link ${
-                    link.isRoute ? (location === link.href ? 'active text-cyan-400' : '') : 
+                  className={`hover:text-cyan-400 transition-colors duration-200 nav-link ${link.isRoute ? (location === link.href ? 'active text-cyan-400' : '') :
                     (activeSection === link.href.substring(1) ? 'active text-cyan-400' : '')
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </button>

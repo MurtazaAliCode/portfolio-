@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import profileImage from '@assets/WhatsApp Image 2024-08-06 at 00.47.31_045c54da_1751277671914.jpg';
-import logoImage from '@assets/logo_1751278240532.webp';
+import profileImage from '../assets/WhatsApp Image 2024-08-30 at 20.15.15_7b77b7profile_1751277671914.jpgprofile_1751277671914.jpgprofile_1751277671914.jpg';
+import logoImage from '../assets/logo_1751278240532.webp';
 
 export default function HeroSection() {
   const [displayText, setDisplayText] = useState('');
