@@ -10,9 +10,19 @@ export function useTheme() {
 
   useEffect(() => {
     const root = window.document.documentElement;
+    
+    // Remove all theme classes first
     root.classList.remove('light', 'dark');
+    
+    // Add the current theme class
     root.classList.add(theme);
+    
+    // Save to localStorage
     localStorage.setItem('theme', theme);
+    
+    // Apply the theme to body as well for better coverage
+    document.body.className = document.body.className.replace(/\blight\b|\bdark\b/g, '').trim();
+    document.body.classList.add(theme);
   }, [theme]);
 
   const toggleTheme = () => {

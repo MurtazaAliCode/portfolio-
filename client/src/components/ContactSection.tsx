@@ -52,8 +52,8 @@ export default function ContactSection() {
   };
 
   const socialLinks = [
-    { name: 'GitHub', icon: 'fab fa-github', url: '#' },
-    { name: 'LinkedIn', icon: 'fab fa-linkedin', url: '#' },
+    { name: 'GitHub', icon: 'fab fa-github', url: 'YOUR_GITHUB_URL_HERE' },
+    { name: 'LinkedIn', icon: 'fab fa-linkedin', url: 'YOUR_LINKEDIN_URL_HERE' },
     { name: 'Twitter', icon: 'fab fa-twitter', url: '#' },
     { name: 'Website', icon: 'fas fa-globe', url: '#' }
   ];

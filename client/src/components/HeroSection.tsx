@@ -25,10 +25,10 @@ export default function HeroSection() {
   }, [currentIndex, fullText]);
 
   const handleDownloadResume = () => {
-    // Create a mock resume download
+    // Download user's provided resume
     const link = document.createElement('a');
-    link.href = '#';
-    link.download = 'final-resume.pdf';
+    link.href = '/resume.pdf'; // This will be replaced with actual resume path
+    link.download = 'resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
