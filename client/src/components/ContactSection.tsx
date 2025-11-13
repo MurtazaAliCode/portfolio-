@@ -52,10 +52,10 @@ export default function ContactSection() {
   };
 
   const socialLinks = [
-    { name: 'GitHub', icon: 'fab fa-github', url: 'YOUR_GITHUB_URL_HERE' },
-    { name: 'LinkedIn', icon: 'fab fa-linkedin', url: 'YOUR_LINKEDIN_URL_HERE' },
+    { name: 'GitHub', icon: 'fab fa-github', url: 'https://github.com/MurtazaAliCode' },
+    { name: 'LinkedIn', icon: 'fab fa-linkedin', url: 'https://www.linkedin.com/in/syed-murtaza-ali-15b939318/' },
     { name: 'Twitter', icon: 'fab fa-twitter', url: '#' },
-    { name: 'Website', icon: 'fas fa-globe', url: '#' }
+    { name: 'Website', icon: 'fas fa-globe', url: 'https://s-murtaza-ali.vercel.app/' }
   ];
 
   return (

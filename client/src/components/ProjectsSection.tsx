@@ -104,13 +104,12 @@ export default function ProjectsSection() {
 
         {/* View More Projects Button */}
         <div className="text-center mt-12">
-          <a
-            href="YOUR_GITHUB_URL_HERE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-violet-500 text-white font-semibold rounded-lg hover:scale-105 hover-glow transition-all duration-300"
-          >
-            <i className="fab fa-github mr-2"></i>
+                      <a
+                      href="https://github.com/MurtazaAliCode"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-violet-500 text-white font-semibold rounded-lg hover:scale-105 hover-glow transition-all duration-300"
+                    >            <i className="fab fa-github mr-2"></i>
             View All Projects on GitHub
           </a>
         </div>

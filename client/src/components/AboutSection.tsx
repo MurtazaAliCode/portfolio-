@@ -70,15 +70,15 @@ export default function AboutSection() {
               <div className="space-y-4">
                 <div className="border-l-2 border-cyan-400 pl-4">
                   <h4 className="font-semibold text-slate-200">Senior Frontend Developer</h4>
-                  <p className="text-slate-400">TechCorp Inc. • 2025 - Present</p>
+                  <p className="text-slate-400">Gouvernour Hous • Present</p>
                 </div>
                 <div className="border-l-2 border-violet-400 pl-4">
                   <h4 className="font-semibold text-slate-200">Full Stack Developer</h4>
-                  <p className="text-slate-400">StartupXYZ • 2023 - 2021</p>
+                  <p className="text-slate-400">Gouvernour Hous • 2023 - 2021</p>
                 </div>
                 <div className="border-l-2 border-cyan-400 pl-4">
-                  <h4 className="font-semibold text-slate-200">Computer Science, B.S.</h4>
-                  <p className="text-slate-400">University of Technology • 2020 - 2024</p>
+                  <h4 className="font-semibold text-slate-200">Agentic AI Developer</h4>
+                  <p className="text-slate-400">PIAIC • 2020 - 2024</p>
                 </div>
               </div>
             </div>

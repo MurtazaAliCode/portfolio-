@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useThemeContext } from '@/components/ThemeProvider';
 import { useLocation } from 'wouter';
 import logoImage from "../assets/logo_1751278240532.webp";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-  const { theme, toggleTheme } = useThemeContext();
   const [location, setLocation] = useLocation();
 
   const navLinks = [
@@ -101,21 +99,11 @@ export default function Navigation() {
             </div>
           </div>
 
-          {/* Theme Toggle & Mobile Menu */}
+          {/* "Let's Work Together" Text */}
           <div className="flex items-center space-x-4">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-700 transition-colors"
-            >
-              <i className={`${theme === 'light' ? 'fas fa-moon' : 'fas fa-sun'} text-xl`}></i>
-            </button>
-
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-700 transition-colors"
-            >
-              <i className={`${isOpen ? 'fas fa-times' : 'fas fa-bars'} text-xl`}></i>
-            </button>
+            <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent animate-pulse">
+              Let's Work Together
+            </span>
           </div>
         </div>
       </div>

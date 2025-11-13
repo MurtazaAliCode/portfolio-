@@ -27,8 +27,8 @@ export default function HeroSection() {
   const handleDownloadResume = () => {
     // Download user's provided resume
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // This will be replaced with actual resume path
-    link.download = 'resume.pdf';
+    link.href = '/Syed Murtaza Ali Resume.pdf'; // This will be replaced with actual resume path
+    link.download = 'Syed Murtaza Ali Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
