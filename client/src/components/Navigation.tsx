@@ -83,7 +83,7 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center">
             <div className="ml-10 flex items-baseline space-x-8">
               {navLinks.map((link) => (
                 <button
@@ -97,6 +97,9 @@ export default function Navigation() {
                 </button>
               ))}
             </div>
+            <span className="ml-8 text-xl font-bold bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent animate-pulse">
+              Let's Work Together
+            </span>
           </div>
 
           {/* Mobile Menu Button */}
@@ -116,13 +119,6 @@ export default function Navigation() {
                 </svg>
               )}
             </button>
-          </div>
-
-          {/* "Let's Work Together" Text */}
-          <div className="hidden md:flex items-center space-x-4">
-            <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent animate-pulse">
-              Let's Work Together
-            </span>
           </div>
         </div>
       </div>
